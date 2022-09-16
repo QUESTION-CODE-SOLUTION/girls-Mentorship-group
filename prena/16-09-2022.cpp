@@ -21,7 +21,7 @@ int main() {
     else{
         cout<<"\n\nYou are eligible for below Branch/s :";
         if (j>=75&&h1>=35&&h2>=55){
-            cout<<"\nComputer Science\nCSE(cyber security and blockchain)\nArtificial and Data science\n Internet of Things";
+            cout<<"\nComputer Science\nCSE(cyber security and blockchain)\nArtificial and Data science\nInternet of Things";
         }
         if (j>=70&&h1>=35&&h2>=55){
             cout<<"\nElectronics and Communication Engineering\nElectronics and Instrumentation Engineering\nElectrical Engineering";
