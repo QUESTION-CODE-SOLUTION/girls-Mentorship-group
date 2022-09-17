@@ -1,0 +1,100 @@
+                                                                  DATE : 18-SEPTEMBER-2022
+         
+    
+-------------------------------------------------------------------SOME C++ PROGRAMS--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+//print hello 5 times with the help of while loop.
+
+#include <iostream>
+using namespace std;
+int main() {
+   int n = 1;
+   while(n<=5)
+  {
+      cout<<"hello\n";
+      n++;
+  }
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//count the number of digits with help ofwhile and for loop.
+
+#include <iostream>
+using namespace std;
+    
+   int main() {
+    int n,count = 0;
+    cout<<"enter the digit";
+    cin>>n;
+    while(n>0)
+    {
+        n=n/10;
+        count++;
+    }
+ cout<<count;
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+// WHITH THE HELP OF FOR LOOP
+
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+   int n,c=0;
+   cout<<"Enter the no. of digits\n";
+   cin>>n;
+   for(c ; n>=1 ; c++){
+       n=n/10;
+   }
+       cout<<c;
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//WRITE A PROGRAM TONREVERSE A NUMBER WITH WHILE LOOP:
+
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+int n, c=0, rem;    
+cout<<"Enter a number: ";    
+cin>>n;    
+  while(n!=0)    
+  {    
+     rem=n%10;      
+     c=c*10+rem;    
+     n/=10;    
+  }    
+ cout<<"Reversed Number: "<<c<<endl;     
+return 0;  
+} 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+//WRITE A PROGRAM TONREVERSE A NUMBER WITH FOR LOOP:
+
+#include <iostream>  
+using namespace std;
+int main()  {
+ int n , reverse=0;
+ cout<<"enter a digit\n";
+ cin>>n;
+  for (; n!=0 ; )
+  {
+   reverse = reverse*10 ;
+   reverse = reverse + n%10 ;
+   n=n/10;
+  }
+  cout<<"Reversed Number: "<<reverse<<endl;     
+ return 0;  
+}  
