@@ -1,0 +1,108 @@
+1. Write a program to print hello 5 times using for loop.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int i;
+    for(int i=1; i<=5; i++)
+    {
+        cout<<"hello"<<endl;
+    }
+}
+
+2. Write a program to print counting of numbers using for loop.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int i;
+    for(int i=1; i<=20; i++)
+    {
+        cout<<i<<endl;
+    }
+}
+
+3. Write the table of 5 using for loop.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    for(int i=1; i<=11; i++)
+    {
+        cout<<n<<"*"<<i<<"="<<i*n<<endl;
+    }
+}
+
+4. Write the square of numbers using for loop.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int i;
+    for(int i=1; i<=11; i++)
+    {
+        cout<<"square of"<<i<<"is"<<i*i<<endl;
+    }
+}
+
+5. Write hello 5 times using while loop.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int n=1;
+    while(n<=5)
+    {
+        cout<<"hello";
+        n++;
+    }
+}
+
+6. Write a program to count numbers using while loop.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int n=1;
+    while(n<=10)
+    {
+        cout<<n;
+        n++;
+    }
+}
+7. Write a program to write tables using while loop.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int i;
+    int n=1;
+    cin>>i;
+    while(n<=10)
+    {
+        cout<<n<<"*"<<i<<"="<<i*n<<endl;
+        n++;
+    }
+}
+8. Write a program to write square using while loop.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int n=1;
+    while(n<=10)
+    {
+        cout<<"square of"<<n<<"is"<<n*n;
+        n++;
+    }
+}
+9. Write a program to count digits.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int count=0;
+    int n;
+    cin>>n;
+    while(n>0)
+    {
+        n=n/10;
+        count++;
+    }
+    cout<<count;
+}
+ 
+              
