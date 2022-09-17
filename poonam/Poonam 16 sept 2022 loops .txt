@@ -1,0 +1,161 @@
+For loop
+
+
+Que 1) write a program to print a number from 1 to 10.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   for (int i=0; i<=10;i++)
+   {
+       cout<<i<<endl;
+   }
+   
+    return 0;
+}
+
+
+
+
+Que 2) Write a program to print a table of input number.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{ 
+    cout<<"Enter any number";
+    int n;
+    cin>>n;
+   for (int i=1; i<=10;i++)
+   {
+       cout<<n<<"*"<<i<<"="<<i*n<<endl;
+   }
+   
+    return 0;
+}
+
+
+Que 3) Write a program to print a square of number within a range.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{ 
+   for (int i=1; i<=10;i++)
+   {
+       cout<<"Square of "<<i<<" is "<<i*i<<endl;
+   }
+   
+    return 0;
+}
+
+
+
+
+Que 4) Write a program to print a word in sequence using loop.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{ 
+    for (int i=1;i<=10; i++)
+   {
+       cout<<i<<") ";   
+       cout<<"hello"<<endl;
+   }
+    return 0;
+}
+
+
+While loop
+
+
+Que 5) write a program to print a sequence of numbers .
+
+#include <iostream>
+using namespace std;
+
+int main()
+{ 
+    int i;
+   while (i<=10)
+   {
+       cout<<i<<endl;
+       i++;
+   }
+   
+    return 0;
+}
+
+
+
+Que 6) Write a program to print a table of given input.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{ 
+    cout<<"Enter any number";
+    int n;
+    int i=1;
+    cin>>n;
+    while (i<=10)
+   {
+       cout<<n<<"*"<<i<<"="<<i*n<<endl;
+       i++;
+   }
+   
+    return 0;
+}
+
+
+
+Que 7) Write a program to print a square of number.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{ 
+    int i=1;
+    while (i<=10)
+   {
+       cout<<"Square of "<<i<<" is "<<i*i<<endl;
+       i++;
+   }
+   
+    return 0;
+}
+
+
+
+Que 8) Write a program to print a word in sequence using loops.`
+
+#include <iostream>
+using namespace std;
+
+int main()
+{ 
+    int i=1;
+    while (i<=10)
+   {
+       cout<<i<<") ";   
+       cout<<"hello"<<endl;
+       i++;
+   }
+    return 0;
+}
+
+
+
+
+
+
