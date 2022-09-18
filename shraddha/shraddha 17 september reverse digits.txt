@@ -1,0 +1,36 @@
+1. Write a program to reverse anumber.
+Ans. #include <iostream>
+using namespace std;
+int main() {
+    int n;
+    int reverse_number=0;
+    cout<<"Enter a number ";
+    cin>>n;
+    
+    while(n>0)
+    {
+       reverse_number=n%10+10*reverse_number;
+       n=n/10;
+    }
+    cout<<reverse_number;
+}
+
+2. Write a program to display a number at their at unit place.
+Ans. #include <iostream>
+#include<math.h>
+using namespace std;
+int main() {
+    int n,i=0;
+    int number=0;
+    cout<<"Enter a number ";
+    cin>>n;
+    while(n>0)
+    {
+       number=n%10*pow(10,i);
+       n=n/10;
+       i++;
+       cout<<number<<endl;
+       
+    }
+    
+}
