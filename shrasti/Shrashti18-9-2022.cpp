@@ -85,8 +85,23 @@ int main()
         cout<<p<<endl;
         b++;
     }
+//Reverse
 
-    return 0;
+  int u, re = 0, E;
+
+  cout << "Enter an integer: ";
+  cin >> u;
+
+  while(n != 0) {
+    E = u % 10;
+    re = re * 10 + E;
+    u/= 10;
+  }
+
+  cout << "Reversed Number = " << re;
+
+  return 0;
+
 
       
 
