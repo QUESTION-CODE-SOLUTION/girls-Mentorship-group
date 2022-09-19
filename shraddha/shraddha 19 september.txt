@@ -1,0 +1,158 @@
+1. Display 
+   "****
+    ****
+    ****
+    ****"
+Ans. #include <iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=4;i++)
+    {
+        for(int j=1;j<=4;j++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
+
+2.Display " 1234
+                 1234
+                 1234
+                  1234"
+Ans. #include <iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=4;i++)
+    {
+        for(int j=1;j<=4;j++)
+        {
+            cout<<j;
+        }
+        cout<<endl;
+    }
+}
+ 3. Display: "1111
+                  2222
+                  3333
+                  4444"
+Ans. #include <iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=4;i++)
+    {
+        for(int j=1;j<=4;j++)
+        {
+            cout<<i;
+        }
+        cout<<endl;
+    }
+}
+
+4. Display"*#*#
+               *#*#
+               *#*#
+               *#*#"
+Ans. #include <iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=4;i++)
+    {
+        for(int j=1;j<=4;j++)
+        {
+            if(j%2==0)
+            {
+            cout<<"#";
+            }
+            else {
+            cout<<"*";
+            }
+        }
+        cout<<endl;
+    }
+}
+
+5. DIisplay "*#*#
+                 ####
+                 *#*#
+                ####"
+Ans. #include <iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=4;i++)
+    {
+        for(int j=1;j<=4;j++)
+        {
+            if(j%2==0 || i%2==0)
+            {
+            cout<<"#";
+            }
+            else {
+            cout<<"*";
+            }
+        }
+        cout<<endl;
+    }
+}
+6. Display "****
+                *#*#
+                ****
+                *#*#"
+Ans. #include <iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=4;i++)
+    {
+        for(int j=1;j<=4;j++)
+        {
+            if(j%2==0 && i%2==0)
+            {
+            cout<<"#";
+            }
+            else {
+            cout<<"*";
+            }
+        }
+        cout<<endl;
+    }
+}
+7. Display "*
+                **
+                ***
+                ****
+                *****"
+Ans. #include <iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=5;i++)
+    {
+        for(int j=1;j<=i;j++)
+           {
+            cout<<"*";
+            }
+        cout<<endl;
+    }
+}
+
+8. Display"1
+                12
+                123
+                1234
+                12345"
+Ans. #include <iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=5;i++)
+    {
+        for(int j=1;j<=i;j++)
+           {
+            cout<<j;
+            }
+        cout<<endl;
+    }
+}
+
+
+
+
+ 
