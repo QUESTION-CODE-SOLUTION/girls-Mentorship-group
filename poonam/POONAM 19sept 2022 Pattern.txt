@@ -1,0 +1,161 @@
+QUE 1
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for ( int i=1; i<=4;i++)
+    {
+        for(int j=1; j<=4; j++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+
+Comment; ****
+         ****
+         ****
+         ****
+
+
+
+
+QUE 2
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for ( int i=1; i<=4;i++)
+    {
+        for(int j=1; j<=4; j++)
+        {
+            cout<<j;
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+
+
+Comment: 1 2 3 4
+         1 2 3 4
+         1 2 3 4
+         1 2 3 4
+
+
+
+
+
+QUE 3
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for ( int i=1; i<=5;i++)
+    {
+        for(int j=1; j<=5; j++)
+        {
+            cout<<i;
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+
+
+Comment: 1 1 1 1 1
+         2 2 2 2 2
+         3 3 3 3 3
+         4 4 4 4 4
+         5 5 5 5 5
+
+
+
+
+
+QUE 4
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for ( int i=1; i<=4;i++)
+    {
+        for(int j=1; j<=4; j++)
+        {
+            if(j%2==0)
+            {
+                cout<<"#";
+            }
+            else 
+            {
+                cout<<"*";
+            }
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+
+Comment: * # * #
+         * # * #
+         * # * #
+         * # * #
+
+
+
+
+
+QUE 5
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for ( int i=1; i<=4;i++)
+    {
+        for(int j=1; j<=4; j++)
+        {
+            if(i%2==1 && j%2==1)
+            {
+                cout<<"*";
+            }
+            else 
+            {
+                cout<<"#";
+            }
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+
+
+Comment: * # * #
+         # # # #
+         * # * #
+         # # # #
+
+
+
+
+
+
+
