@@ -1,0 +1,15 @@
+ #include<iostream>
+   using namespace std;
+   int main()
+   {
+    float tenthpercentage,twelthpercentage, percentile;
+    string name, caste, city;
+    cin>>name>>caste>>city;
+    cin>>tenthpercentage>>twelthpercentage>>percentile;
+    cout<<"name: "<<name<<endl;
+    cout<<"caste: "<<caste<<endl;
+    cout<<"city: "<<city<<endl;
+    cout<<"class 10th percentage:"<<tenthpercentage<<endl;
+    cout<<"class 12th percentage:"<<twelthpercentage<<endl;
+    cout<<"JEE percentile: "<<percentile<<endl;
+   }
