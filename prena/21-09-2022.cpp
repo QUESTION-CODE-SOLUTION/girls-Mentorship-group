@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int summ(int a,int b){
+int summ(int a=9,int b=10){
     int s=a+b;
     return (s);
 }
@@ -42,8 +42,8 @@ int main() {
     int n;
     cout<<"Enter a number : ";
     cin>>n;
-    bool a=prime(n);
-    if (a){
+    bool p=prime(n);
+    if (p){
         cout<<"is a prime number";
     }
     else{
