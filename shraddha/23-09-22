@@ -1,1 +1,13 @@
-
+Print your introduction.
+Ans. #include <iostream>
+using namespace std;
+void introduction (string n, string branch, float CGPA)
+{
+    cout<<"My name is "<<n<<endl;
+    cout<<"my branch is "<<branch<<endl;
+    cout<<"CGPA is "<<CGPA;
+}
+int main()
+{
+    introduction ("shraddha tiwari", "ECE", 9.0);
+}
