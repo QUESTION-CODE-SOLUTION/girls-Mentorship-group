@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+void Introduction(string n,string Branch,float CGPA){
+    cout<<"My name is "<<n<<endl;
+    cout<<"branch is "<<Branch<<endl;
+        cout<<"cgpa is "<<CGPA;
+}
+
+int main(){
+    Introduction("VAISHNAVI","CSE-ICB",8.1);
+    
+}                                             
