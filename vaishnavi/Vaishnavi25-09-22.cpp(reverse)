@@ -1,0 +1,23 @@
+// Reverse the number
+// n=1234
+//output=4321
+
+#include<iostream>
+using namespace std;
+int main()
+{
+   int a,b=0,n;
+   cout<<"Enter a number  ";
+   cin>>n;
+   while(n!=0)
+   {
+    a=n%10;
+    b=b*10+a;
+    n=n/10;
+    
+   }
+   cout<<b;
+   
+   }
+
+ 
