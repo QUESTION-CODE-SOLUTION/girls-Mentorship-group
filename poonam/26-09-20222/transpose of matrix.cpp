@@ -1,0 +1,42 @@
+#include<iostream>
+#include<vector>
+#include<string>
+using namespace std;
+
+void display(vector<vector<int>>vec)
+{
+    for(int i=0; i<vec.size();i++)
+    {
+        for(int j=0; j<vec[i].size();j++)
+        {
+            cout<<vec[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<"Transpose of above matrix is " <<endl;
+    for(int i=0; i<vec.size();i++)
+    {
+        for(int j=0; j<vec[i].size();j++)
+        {
+            cout<<vec[j][i]<<" ";
+        }
+        cout<<endl;
+    }
+    
+}
+int main()
+{
+    vector<vector<int>>vec={{1,2,3,},{4,5,6},{7,8,9}};
+    display(vec);
+        
+}
+
+
+
+COMMENT:1 2 3 
+        4 5 6 
+        7 8 9 
+        Transpose of above matrix is 
+        1 4 7 
+        2 5 8 
+        3 6 9 
