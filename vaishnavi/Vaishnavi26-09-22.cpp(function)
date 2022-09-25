@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+void Introduction(){
+    cout<<"My name is mansi "<<endl;
+    cout<<"branch is CSE-ICB"<<endl;
+    cout<<"cgpa is 8";
+}
+
+int main(){
+    Introduction();
+    
+}          
