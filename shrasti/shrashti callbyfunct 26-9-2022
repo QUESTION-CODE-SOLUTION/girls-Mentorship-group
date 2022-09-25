@@ -1,0 +1,15 @@
+//Call by function 
+#include <iostream>
+#include <string>
+using namespace std;
+ void introduction(string name,string branch , float cgpa)
+ {  
+    
+cout<<"My name is  "<<name<<endl;
+cout<<"Branch is "<<branch<<endl;
+cout<<"CGPA  " <<cgpa<<endl;
+}
+int main()
+{
+    introduction("shrashti","CSEICB",10);
+}
