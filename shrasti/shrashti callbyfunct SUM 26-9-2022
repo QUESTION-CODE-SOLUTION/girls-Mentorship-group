@@ -1,0 +1,13 @@
+//sum and multiply 
+
+#include <iostream>
+using namespace std;
+ void SUM(int a,int b )
+ {  cout<<a+b<<endl;
+   cout<<a*b<<endl;
+    
+}
+int main()
+{
+    SUM (20,10);
+}
