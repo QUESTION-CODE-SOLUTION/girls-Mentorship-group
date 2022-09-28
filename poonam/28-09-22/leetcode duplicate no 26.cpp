@@ -9,7 +9,7 @@ public:
                 nums[j]=nums[i+1];
                     j++;
             }
-            arr[j] = arr[n-1];
+            arr[j] = arr[i-1];
         }    
         
         return j;
