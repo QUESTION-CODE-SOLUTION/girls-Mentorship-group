@@ -1,0 +1,11 @@
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+   
+        nums.erase(nums.begin());
+        nums.erase(nums.begin()+1);
+        nums.push_back(0);
+        nums.push_back(0);
+        
+    }
+};
