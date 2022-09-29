@@ -1,0 +1,91 @@
+/*print the table */
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     for (int i=1; i<11; i++)
+//     {
+//     cout<<n<<"*"<<i<<"="<<i*n<<endl;
+//     }
+// }
+
+// print the square of any value
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     for (int i=1; i<=10; i++)
+//     {
+//     cout<<"square of i is"<<"="<<i*i<<endl;
+//     }
+// }
+
+ //using while loop
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+   
+//     int n;
+//     n=1;
+//     while (n<=5)
+//     {
+//         cout<<"n";
+//         n++;
+//     }   
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int i, n;
+//     i=1;
+//     cin>>n;
+//     while (i<=10)
+//     {
+//         cout<<n<<"*"<<i<<"="<<i*n<<endl;
+//         i++;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n,i;
+//     cin>>n;
+//     for(int i=1; i<11; i++)
+//     {
+//         cout<<n<<"*"<<n<<"="<<n*n<<endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n=1;
+//     while(n<=5)
+//     {
+//         cout<<"n";
+//         n++;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int i=1;
+//     while(i<=10)
+//     {
+//         cout<<"square of"<<i<<"is"<<i<<"="<<i*i<<endl;
+//         i++;
+//     }
+// }
