@@ -1,0 +1,28 @@
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+         ListNode *previous=nullptr, *current=head, *forward=head;
+        while(forward!=0){
+            forward=forward->next;
+            current->next=previous;
+            previous=current;
+            current=forward;
+        }
+        
+        return previous;
+    }
+};
+
+input
+head =[1,2,3,4,5]
+Output
+[5,4,3,2,1]
+Expected
+[5,4,3,2,1]
+
+Input
+head =[1,2]
+Output
+[2,1]
+Expected
+[2,1]
