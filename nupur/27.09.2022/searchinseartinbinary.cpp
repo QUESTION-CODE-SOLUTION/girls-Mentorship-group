@@ -1,26 +1,31 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-void sortColors(vector<int>vec){
-    bool a = true;
-    for (int i = 0 ; i<vec.size();i++){
-        for(int j =i+1 ; j<vec.size() ; j++){
-            if (vec[i]>vec[j]){
-                swap(vec[i],vec[j]);
-                a=false;
-            }
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+int searchInsert(vector<int>& nums, int target) {
+    int l = 0, n = nums.size(), r = n - 1, ans=-1, mid;
+    while(l<=r)
+    {
+        mid = l + (r-l)/2;
+        if(nums[mid]==target)
+            return mid;
+        else if(nums[mid]<target)
+        {
+            ans = mid;
+            l = mid+1; 
         }
-        if (a){
-            break;
+        else
+        {
+            r = mid - 1;
         }
     }
-    for(int i = 0; i<vec.size(); i++){
-        cout<<vec[i]<<" ";
-    }
+    return ans+1;
 }
 
-int main(){
-    vector<int> vec={2,0,1,2,2,1,0};
-    sortColors(vec);
-}
+
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+return lower_bound(nums.begin(), nums.end(), target)- nums.begin();
+        
+    }
