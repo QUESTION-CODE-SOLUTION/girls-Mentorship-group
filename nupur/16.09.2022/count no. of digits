@@ -1,0 +1,17 @@
+//count the number of digits with help ofwhile and for loop.
+
+#include <iostream>
+using namespace std;
+    
+   int main() {
+    int n,count = 0;
+    cout<<"enter the digit";
+    cin>>n;
+    while(n>0)
+    {
+        n=n/10;
+        count++;
+    }
+ cout<<count;
+    return 0;
+}
