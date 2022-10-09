@@ -15,5 +15,8 @@ vec.push_back(300);
 for(int i= 0;i<vec.size();i++){
 cout<<vec[i]<<" ";
 }
+   cout<<endl<<"size before popback"<<vec.size()<<endl;
+vec.pop_back();
+cout<<"size  popback"<<vec.size()<<endl;
 return 0;
 }
