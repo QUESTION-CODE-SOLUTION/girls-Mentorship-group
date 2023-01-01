@@ -1,0 +1,87 @@
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
+
+
+// } Driver Code Ends
+
+class Solution{
+    // Initialize vector to store 3 set bit numbers
+    vector<long long> threeSetBits;
+public:
+    // Returns the Index of nearest number >= L and nearest number <= R using isLowerBound.
+    int nearest_binary_search(bool isLowerBound, long long searchValue, int low, int high){
+        if(searchValue <= threeSetBits[0]) {
+            return 0;
+        }
+        if(searchValue >= threeSetBits[threeSetBits.size()-1]) {
+            return threeSetBits.size()-1;
+        }
+    
+        int lo = 0, hi = threeSetBits.size() - 1;
+    
+        while (lo <= hi) {
+            int mid = lo + (hi - lo) / 2;
+    
+            if (searchValue < threeSetBits[mid])
+                hi = mid - 1;
+            else if (searchValue > threeSetBits[mid])
+                lo = mid + 1;
+            else
+                return mid;
+        }
+        // In the range of [L,R], the value L should be the lower bound (Lower most value).
+        // Means any valid 3 set bit value should be greater than L
+        // And the value R should be the Upper bound. (Upper most Value)
+        // Hence while finding nearest to L we should return the value greater than searchValue
+        // And while finding nearest to R we should return the value lesser than searchValue
+        // Here threeSetBits[lo] > searchValue and arr[hi] < searchValue, because
+        // lo = hi + 1 is the only case in which the while loop execution stops.
+        if(isLowerBound)
+            return lo;
+        return hi;
+    }
+    // Add 3-Set Bit numbers to the vector threeSetBits
+    // This function is called from the Driver Code. So don't call it in the solve method.
+    void precompute()
+    {
+        // L and R can be maximum of 10^18 which is approx 2^62
+        for(int i=0;i<63;i++){
+            for(int j=i+1;j<63;j++){
+                for(int k=j+1;k<63;k++){
+                    threeSetBits.push_back(pow(2, i) + pow(2, j) + pow(2, k));
+                }
+            }
+        }
+        // In the constraints there is O(log(R-L)) which is basically for search complexity
+        // Hence to use Binary Search we need to sort the vector
+        sort(threeSetBits.begin(), threeSetBits.end());
+    }
+    
+    long long solve(long long l, long long r){
+        // Code Here
+        long long lo_idx_3SetBit = nearest_binary_search(true,l,0,threeSetBits.size());
+        long long hi_idx_3SetBit = nearest_binary_search(false,r,0,threeSetBits.size());
+        return hi_idx_3SetBit - lo_idx_3SetBit + 1;
+    }
+    
+};
+
+
+//{ Driver Code Starts.
+
+int main()
+{
+    int t;
+    Solution ob;
+    ob.precompute();
+    cin>>t;
+    while(t--)
+    {
+        long long l,r;
+        cin>>l>>r;
+        cout << ob.solve(l, r) << endl; 
+    }
+    return 0;
+}
+// } Driver Code Ends
