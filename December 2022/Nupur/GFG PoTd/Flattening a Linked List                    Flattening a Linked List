@@ -1,0 +1,37 @@
+class GfG
+{
+    Node merge(Node A,Node B){
+        Node head = new Node(-1);
+        Node tmp = head;
+        while(A!=null && B!=null){
+            if(A.data<=B.data){
+                tmp.bottom = A;
+                A = A.bottom;
+            }else{
+                tmp.bottom = B;
+                B = B.bottom;
+            }
+            tmp = tmp.bottom;
+        }
+        if(A!=null){
+            tmp.bottom = A;
+        }
+        if(B!=null){
+            tmp.bottom = B;
+        }
+        return head.bottom;
+    }
+    Node flatten(Node root)
+    {
+        
+	    while(root.next!=null){
+	        Node A = root;
+	        Node B = root.next;
+	        Node C = root.next.next;
+	        root = merge(A,B);
+	        root.next = C;
+	        
+	    }
+	    return root;
+    }
+}
