@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,x,y,a,i;
+	cin>>t;
+	
+	for(i=0;i<t;i++)
+	{
+	    cin>>x>>y>>a;
+	    
+	    if(x<=a && y>a)
+	    {
+	        cout<<"YES"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	}
+	return 0;
+}
