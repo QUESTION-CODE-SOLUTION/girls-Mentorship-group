@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int i,t,x;
+	cin>>t;
+	for(i=0;i<=t;i++){
+	    cin>>x;
+	    int t = x*15;
+	    cout<<t<<endl;
+	}
+	return 0;
+}
