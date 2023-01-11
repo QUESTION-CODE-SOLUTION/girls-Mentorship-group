@@ -1,0 +1,16 @@
+class Solution {
+  public:
+    long long int minIncrements(vector<int> arr, int n) {
+        sort(arr.begin(),arr.end());
+        int ans=0;
+        for(int i=1;i<n;i++){
+            if(arr[i]==arr[i-1]||arr[i]<arr[i-1]){
+                int diff=abs(arr[i]-arr[i-1]);
+                int newElement=arr[i]+diff+1;
+                ans+=(newElement-arr[i]);
+                arr[i]=newElement;
+            }
+        }
+        return ans;
+    }
+};
