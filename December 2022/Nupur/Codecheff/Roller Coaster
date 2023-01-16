@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int X,H;
+	    cin>>X>>H;
+	    if(X>=H){
+	        cout<<"yes"<<endl;
+	    }
+	    else{
+	        cout<<"No"<<endl;
+	    }
+	}
+	return 0;
+}
