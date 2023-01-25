@@ -1,0 +1,18 @@
+#include<math.h>
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while(t--){
+    int n;
+    cin>>n;
+    n = 8*n + 1;
+	long long int h;
+	h = (sqrt(n) - 1)/2;
+	cout<<h<<endl;
+}
+	return 0;
+}
