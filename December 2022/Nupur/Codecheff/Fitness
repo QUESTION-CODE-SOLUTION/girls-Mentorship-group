@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t; cin>>t;
+	while(t--)
+	{
+	    int x; cin>>x;
+	    int c=x*2;   // x km is same for home to office or vice -versa 
+	    
+	    cout<<(c*5)<<endl;
+	}
+	return 0;
+}
