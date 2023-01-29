@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while(t--){
+    int x,y,b;
+    cin>>x>>y;
+    b=x-y;
+    cout<<b<<endl;
+}
+	return 0;
+}
