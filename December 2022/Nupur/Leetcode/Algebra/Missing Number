@@ -1,0 +1,7 @@
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        return nums.size() * (nums.size() + 1) / 2 - accumulate(nums.begin(), nums.end(), 0);
+        //accumulate(): This function returns the sum of all the values lying in a range between [first, last) with the variable sum
+    }
+};
